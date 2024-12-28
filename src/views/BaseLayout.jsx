@@ -1,4 +1,8 @@
 import { Link, Outlet } from 'react-router-dom';
+import './BaseLayout.css';
+
+
+
 
 const BaseLayout = () => {
   return (
@@ -13,9 +17,16 @@ const BaseLayout = () => {
         <nav>
           <ul className="nav">
             <li className="nav-item">
+            <Link className="nav-link" to="/about">
+                About Us
+              </Link>
               <Link className="nav-link" to="/available-cats">
                 Available Cats
               </Link>
+              <Link className="nav-link" to="/contact">
+               Contact Us
+              </Link>
+             
             </li>
           </ul>
         </nav>
@@ -31,3 +42,4 @@ const BaseLayout = () => {
 };
 
 export default BaseLayout;
+
